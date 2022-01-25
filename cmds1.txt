@@ -1,0 +1,603 @@
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+wsl --set-default-version 2
+Install-Module Az -Force -AllowClobber
+terraform -version
+npm install
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+npm -v
+npx express-generator
+npm install
+npm audit fix --force
+npx express-generator
+npm install
+npm audit fix -force
+cls
+docker build --rm --pull -f "C:\Users\aksadmin\AKSGithub\Dockerfile" -label "nodejsdemo" -t "nodejsdemo:latest" "C:\Users\aksadmin\AKSGithub"
+docker build --rm --pull -f "C:\Users\aksadmin\AKSGithub\Dockerfile" --label "nodejsdemo" -t "nodejsdemo:latest" "C:\Users\aksadmin\AKSGithub"
+docker tag  nodejsdemo:latest aksacraji01/nodejsdemo:v1
+docker images
+az login
+Az loging
+az login
+Import-Module Az
+Az login
+Import-Module Az -force
+az login
+Install-Module Az -Force -AllowClobber
+azconne
+Connect-AzAccount
+az login
+connect azaccount
+Connect-AzAccount
+Connect-AzAccount
+az login
+az login
+Install-Module -Name Az -AllowClobber -Scope CurrentUser
+Import-Module -Name Az
+az login
+Connect-AzAccount
+az acr login 
+az login
+az acr login --name aksacraji01
+az acr list  --output tabl
+az acr list  --output table
+docker login  aksacraji01.azurecr.io --username aksacraji01 --password e9kHmWhdjBpHVnhJU2NSON1/CkkxI5oF
+docker tag  aksacraji01/nodejsdemo:v1 aksacraji01.azurecr.io/nodejsdemo:v1
+docker push aksacraji01.azurecr.io/nodejsdemo:v1
+kubectl context
+kubectl config Get-Context
+kubectl config get-contexts
+kubectl get all
+kubectl run bb -i -t --image busybox
+kubctl get all
+kubectl get all
+kubectl delete pod bb
+kubectl get all
+kubectl config get-contexts
+docker run -d -p 80:80 docker/getting-started
+kubectl config get-contexts
+kubectl run bb -i -t --image busybox
+kubctl get all
+kubectl get all
+kubectl config get-contexts
+kubectl delete pod bb
+kubectl config get-contexts
+az account set --subscription 7c7e2506-758e-456e-b552-b71ed5885612
+az aks get-credentials --resource-group AKSSet --name aks-demo-aji-01
+kubectl config get-contexts
+kubectl get all
+cls
+kubectl config get-contexts
+kubectl config use-contexts aks-demo-aji-01
+kubectl config use-context aks-demo-aji-01
+kubect get all
+kubectl get all
+cls
+kubectl run ng --image nginx --port 8080
+kubectl get pod
+kubectl get all -o wide
+kubectl delete pod ng
+kubectl create deployment nginx --image nginnx
+kubectl get all -o wide
+cls
+kubectl get all -o wide
+cls
+kubectl expose deploy nginx --port 80 --type  Loadbalancer
+kubectl expose deploy nginx --port 80 --type  LoadBalancer
+kubectl get all -o wide
+kubectl run ng --image nginx --port 8080
+kubectl get all -o wide
+kubectl expose deploy nginx --port 80 --type  LoadBalancer
+kubectl expose deploy nginx1 --port 80 --type  LoadBalancer
+kubectl expose deploy ng --port 80 --type  LoadBalancer
+kubectl expose deploy nginx --port 80 --type  LoadBalancer
+kubectl get pod
+kubectl delete pod ng
+kubectl get pod
+kubectl delete pod nginx-9469f4878-jqswl
+kubectl get pod
+kubectl expose deploy nginx --port 80 --type  LoadBalancer
+kubectl get all -o wide
+kubectl scale deploy nginx --replica 5
+kubectl scale deploy nginx --replicas 5
+cls
+kubectl get all -o wide
+kubectl delete pod pod/nginx-9469f4878-s267f
+cls
+kubectl get deployment -o yaml > ngnix.yaml 
+kubectl get deployment -o yaml > C:\ngnix.yaml
+kubectl get all
+kubectl create -f .\pod.yaml
+kubectl create -f .\pod.yaml --validate=false
+kubectl get all
+cls
+kubect get al
+kubect get all
+cls
+kubect get all
+cls
+kubectl get all
+kubectl delete pod
+kubectl delete pods
+kubectl delete all pods
+cls
+kubectl delete --all deployments
+kubectl get all
+kubectl delete all
+kubectl delete --all namespaces
+kubectl get all
+cls
+kubectl get all
+kubectctl getconfig get-contexts
+kubectl getconfig get-contexts
+kubectl config get-contexts
+kubectl get all
+kubectl delete pod ajipod
+kubectl get all
+cls
+kubectl apply -f .\pod.yaml
+kubectl apply -f .\pod.yaml --validate=false
+kubectl get all
+kubectl delete pod ajipod
+kubectl get all
+cls
+kubectl get all
+cls
+kubectl apply -f .\npod.yaml
+kubectl get all
+kubectl describe pod nginx
+cls
+kubectl get all
+kubectl get all -o wide
+kubectl apply -f .\pod.yaml --validate=false
+kubectl get all -o wide
+kubectl apply -f .\npod.yaml
+kubectl get all -o wide
+cls
+kubectl logs nginx
+kubectl delete pod nginx
+kubectl  get alll
+kubectl  get all
+kubectl apply -f .\npod.yaml
+kubectl get all -o wide
+kubectl delete -f .\npod.yaml
+kubectl get all -o wide
+kubectl apply -f .\replicaset.yaml
+kubectl get all -o wide
+kubectl apply -f .\replicaset.yaml
+kubectl apply -f .\replicaset.yaml --validate=false
+az account set --subscription 7c7e2506-758e-456e-b552-b71ed5885612
+az aks get-credentials --resource-group AKSSetup --name azaks01
+kubectl cnfig get-contexts
+kubectl config get-contexts
+kubectl set-context azaks01
+az acr login
+kubectl config use-contexts azaks01
+kubectl config use-context azaks01
+kubectl get all
+az acr login --name azaksacr01
+get-history -o cmd.txt
+Get-History -h
+Get-History --help
+Get-History -help
+Get-History
+notepad (Get-History)
+notepad (Get-History | select -ExpandProperty '.\kubctl get all.txt')
+Get-History | Export-Csv  "c:\users\aksadmin\cmsd.txt"
+kubectl rub ng --image nginx --port 80
+kubectl run ng --image nginx --port 80
+get all
+kubectl get all
+kubectl get all -o wide
+kubectl delete pod ng
+kubectl create deployment nginx --image nginx
+kubectl get all -o wide
+kubectl expose deploy nginx --port80 --type LoadBalancer
+kubectl expose deploy nginx --port 80 --type LoadBalancer
+kubectl get all -o wide
+scale deploy nginx --replicas 5
+kubectl scale deploy nginx --replicas 5
+kubectl get all
+kubectl create ng --image nginx
+kubectl run  ng --image nginx --port 80
+kubectl get all
+kubectl create .\pod.yaml
+kubectl create -f .\pod.yaml
+kubectl get all
+kubectl create -f .\replicaset.yaml
+kubectl create -f .\replicaset.yaml --validate=false
+kubectl get all -o wide
+kubectl delete all
+kubectl delete pod nginx
+kubectl get all -o wide
+scale deploy nginx --replicas 0
+scale deploy nginx --replicas 1
+kubectl scale deploy nginx --replicas 0
+kubectl get all -o wide
+kubectl delete pod ng
+kubectl get all -o wide
+kubectl apply -f .\replicaset.yaml
+kubectl apply -f .\replicaset.yaml --validation = false
+kubectl apply -f .\replicaset.yaml --validation=false
+kubectl apply -f .\replicaset.yaml --validate = false
+kubectl apply -f .\replicaset.yaml --validate=false
+kubectl config get-config
+kubectl config get-contexts
+kubectl apply -f .\replicaset.yaml --validate=false
+kubectl apply -f .\pod.yaml
+kubectl apply -f .\pod01.yaml
+kubectl get all -o wide
+kubectl apply -f .\pod01.yaml
+kubectl get all -o wide
+kubectl apply -f .\pod01.yaml
+kubectl apply -f .\podn01.yaml
+kubectl get all -o wide
+kubectl apply -f .\podn02.yaml
+kubectl get all -o wide
+kubectl expose deploy myapp --port 80 --type LoadBalancer
+kubectl expose deploy myapp01 --port 80 --type LoadBalancer
+kubectl apply -f .\podn02.yaml
+kubectl get all -o wide
+kubectl expose deploy nginx --port 80 --type LoadBalancer
+kubectl apply -f .\podn02.yaml
+kubectl get all -o wide
+delete pod nginx
+kubectl delete pod nginx
+kubect get all
+kubectl get all -o wide
+kubectl scale deploy nginx --replicas 0
+kubectl get all -o wide
+kubectl delete replicaset nginx-5cfbc579c
+kubectl get all -o wide
+kubectl scale deploy nginx --replicas 1
+kubectl get all -o wide
+kubectl scale deploy nginx --replicas 0
+kubectl scale deploy myapp01 --replicas 1
+kubectl get all -o wide
+kubectl delete all namespaces
+kubectl delete -f .\podn02.yaml
+kubectl get all -o wide
+kubectl delete -f .\pod01.yaml
+kubectl delete -f .\podn01.yaml
+kubectl get all -o wide
+kubectl delete pod nginx
+kubectl delete replicaset nginx-5cfbc579c
+kubectl get all -o wide
+cls
+kubectl get all
+cls
+kubectl apply -f .\poddepo1.yaml
+kubectl get all -o wide
+cls
+kubectl delete rs nginx-deployment-8546989766-t8tpd
+kubectl get all -o wide
+kubectl delete rs nginx-deployment-8546989766-t8tpd 
+cls
+kubectl get all -o wide
+kubectl delete rs nginx-deployment-8546989766
+kubectl get all -o wide
+kubectl delete rs nginx-5cfbc579c
+kubectl delete rs nginx-6799fc88d8
+kubectl get all -o wide
+kubectl delete rs nginx-5cfbc579c
+kubectl get all -o wide
+kubectl delete deployment nginx
+kubectl get all -o wide
+kubectl delete loadbalancer nginx
+kubectl delete ld  nginx
+kubectl delete lb nginx
+kubectl delete LoadBalancer nginx
+kubectl delete service nginx
+kubectl delete service myapp01
+kubectl get all -o wide
+kubectl expose deployment --port 80 --type LoadBalancer
+kubectl expose deployment nginx-deployment --port 80 --type LoadBalancer
+kubectl get all -o wide
+kubectl expose deployment nginx-deployment --port 80 --type LoadBalancer
+kubectl get all -o wide
+kubectl apply -f .\poddepo1.yaml
+kubectl get all -o wide
+kubectl get deployment
+kubectl describe deployment
+kubectl get all -o wide
+kubectl get deployment
+kubectl get all -o wide
+kubectl scale deploy nginx-deployment --replicas 4
+kubectl get all -o wide
+kubectl delete pod nginx-deployment-8546989766-lwvhj
+kubectl delete pod nginx-deployment-8546989766-f22t5
+kubectl get all -o wide
+kubectl scale deploy nginx-deployment --replicas 2
+kubectl get all -o wide
+kubectl delete deployment --all
+kubectl get all
+cls
+kubectl get all
+kubectl delete service nginx-deployment
+az account set --subscription 7c7e2506-758e-456e-b552-b71ed5885612
+kubectl config get-contexts
+az aks get-credentials --resource-group AKSSetup --name azaks01 --admin
+kubectl get node
+kubectl get pods
+cls
+kubectl get services
+kubectl get deployment
+az account set --subscription 7c7e2506-758e-456e-b552-b71ed5885612az
+az account set --subscription 7c7e2506-758e-456e-b552-b71ed5885612
+az aks get-credentials --resource-group aksvmsetup --name aksclster
+kubectl config get-contexts
+az acr login azakasacr01
+az acr login --name  azakasacr01
+docker build --rm --pull -f "C:\Users\aksadmin\AKSGithub\Dockerfile" --label "nodejsdemo" -t "nodejsdemo:latest" "C:\Users\aksadmin\AKSGithub"
+az acr list
+az acr login --name  azakasacr01
+az acr list
+docker tag nodejsdemo:latest azakasacr01.azurecr.io/nodejsdemo:v1
+az login
+az acr login --name azakasacr01
+az acr list
+cls
+az  acr list --resource-group aksvmsetup
+az acr login --name azakasacr01
+az acr list
+az acr list --output table
+az login
+az acr login --name aksvmsetup
+az login
+az acr login azakasacr01
+az acr login -n azakasacr01
+az acr list
+az acr login -n azakasacr01
+az acr list
+docker login azakasacr01.azurecr.io --username azakasacr01 --password 3WDwXaxnqqqdw9XdPk7FOVmWbjYA1V=Q
+docker images
+docker push azakasacr01.azurecr.io/nodejsdemo:v1
+az account set --subscription 7c7e2506-758e-456e-b552-b71ed5885612
+az aks get-credentials --resource-group aksvmsetup --name aksclster
+az config get-contexts
+kubectl config get-contexts
+kubectl apply -f .\apppoddep.yaml
+kubectl get all -o wide
+cls
+kubectl get all -o wide
+kubectl apply -f .\apppoddep.yaml
+kubectl get all -o wide
+kubectl apply -f .\apppoddep.yaml
+kubectl get all -o wide
+kubectl apply -f .\apppoddep.yaml
+kubectl get all -o wide
+cls
+kubectl get all -o wide
+kubectl delete -f .\apppoddep.yaml
+kubectl get all -o wide
+kubectl apply -f .\apppoddep.yaml
+cls
+kubectl get all -o wide
+cls
+kubectl get all -o wide
+kubectl get odes
+kubectl get nodes
+kubectl get pods
+kubectl get namespaces
+kubectl create namespace tmp
+kubectl get namespaces
+cls
+kubectl get namespaces
+ kubectl get pods -n calico-system
+ kubectl get pod calico-kube-controllers-5874954c8c-xxs4j
+ kubectl get pod calico-kube-controllers-5874954c8c-xxs4j -n calico-system
+ kubectl describe pod calico-kube-controllers-5874954c8c-xxs4j -n calico-system
+cls
+kubectl get pods -n default
+kubectl logs nodejsdemo-9bf87d68b-rnn9f -n default
+cls
+kubectl get nodes
+kubectl get pods
+kubectl get node
+kubectl get namespaces
+ kubectl get pods -n gatekeeper-system
+kubectl logs gatekeeper-audit-7bfb4b455c-dqnwk -n gatekeeper-system
+cls
+kubectl get namespace
+kubectl get all -n calico-system
+kubectl get svc -n calico-system
+kubectl get pods -n calico-system
+kubectl get deployment -n calico-system
+kubectl get daemonset -n calico-system
+cls
+kubectl get pvc  -n calico-system 
+kubectl run busybox -t -i --image busybox
+kubectl get all
+kubectl describe pod busybox
+kubectl create namespace demo1
+kubect get namespace 
+kubectl get namespace 
+kubectl run bb -t -t --image busybx
+kubectl run bb -t -t --image busybox
+kubectl run bb -t -i --image busybox
+kubectl get all -n demo1
+kubectl get namespace
+kubectl get all -n demo1
+kubectl get all
+kubectl run bb -t -t --image busybox -n demo1
+kubectl run bb -t -i --image busybox -n demo1
+kubectl get all -n demo1
+cls
+az aks get-credentials --resource-group aksvmsetup --name aksclster --admin
+kubectl config view
+kubectl config set-config
+kubectl config set-config -h
+kubectl config set-config --hrlp
+kubectl config set-config --help
+kubectl config set-context -h
+cls
+kubectl config aks --user=clusteradmin --cluster=aksclster  --namespace demo1
+kubectl config set-context  aks --user=clusteradmin --cluster=aksclster  --namespace demo1
+kubectl config get-contexts
+kubectl config use-context aks
+kubectl config get-contexts
+kubectl config use-context aksclster
+Get-History | Export-Csv
+Get-History | Export-Csv "C:\users\aksadmin\cmnds2.txt"
+Get-History
+Get-History
+Get-WmiObject
+kubectl config get-all
+kubectl config get-contexts
+kubectl create secret generic -h
+kubectl create secret generic my-secret --from-literal=key1=supersecret --from-literal=key2=topsecret
+kubectl secret get all
+kubectl get secrets
+kubectl describe secret my-secret
+kubectl create secret generic filesecret --from-file=C:\Users\aksadmin\sec.txt
+kubectl ger secrets
+kubectl get secrets
+kubectl describe secret filesecret
+kubectl get all
+cls
+kubectl get all
+kubectl apply -f .\podrplicast.yaml
+kubectl get all
+kubectl expose nodejsdemoapp --port=80 --type=LoadBalancer
+kubectl expose nodejsdemoapp-jjlf2 --port=80 --type=LoadBalancer
+kubectl expose pod nodejsdemoapp-jjlf2 --port=80 --type=LoadBalancer
+kubectl get all
+kubectl expose pod nodejsdemoapp-jjlf2 --port=80 --type=LoadBalancer
+kubectl get all
+kubectl apply -f .\podrplicast.yaml
+kubectl get all
+kubectl expose -h
+kubectl expose pod nodejsdemoapp-jjlf2 --port=80 --target-port=3000 --type=LoadBalancer
+kubectl expose pod nodejsdemoapp-jpr7l  --port=80 --target-port=3000 --type=LoadBalancer
+kubectl get all
+cat .\secrets.yaml
+kubectl apply -f  .\secrets.yaml
+kubectl get all
+kubectl secret get all
+kubectl get secrets
+kubectl describe secrets mysecretyaml
+cls
+kubectl apply -f  .\secrets.yaml
+kubectl get secrets
+kubectl describe secrets secrettst
+kubectl describe secrets mysecretyaml
+cls
+kubectl get all
+kubectl apply -f .\podswithparms.yaml
+kubectl apply -f .\podswithparms.yaml --validatio=false
+kubectl apply -f .\podswithparms.yaml
+kubectl apply -f .\podswithparms.yaml -validate==false
+kubectl apply -f .\podswithparms.yaml --validate==false
+kubectl apply -f .\podswithparms.yaml --validate=false
+kubectl get all
+kubectl delte pod bb
+kubectl delete pod bb
+kubectl delete pod busybox
+kubectl delete -f .\podrplicast.yaml
+kubectl get all
+cls
+kubectl get all
+kubectl delete pod nodejsdemo-9bf87d68b-rnn9f
+kubectl get all
+cls
+kubectl get all
+kubectl delete rs nodejsdemo-9bf87d68b
+kuectl delete deployment nodejsdemo
+kubectl get all
+kubectl scale deploy nodejsdemo-9bf87d68b --replicas 0
+kubectl scale rs nodejsdemo-9bf87d68b --replicas 0
+kubectl get all
+kubectl delete deploy nodejsdemo
+kubectl get all
+kubectl delete service nodejsdemoapp-jjlf2
+kubectl delete service nodejsdemoapp-jpr7l
+kubectl delete service nodejsdemo-service
+kubetl get all
+kubectl get all
+kubectl apply -f  .\podswithparms.yaml
+kubectl apply -f  .\podswithparms.yaml --validate=false
+kubectl get all
+kubectl exec -t -i pod busybox
+kubectl exec -t -i  busybox
+kubectl exec -t -i  busybox --/bin/sh
+cls
+kubectl get all
+kubectl exec -t -i  busybox -- /bin/sh
+kubectl get all
+kubectl delete pod busybox
+kubectl apply -f .\podswithparms.yaml
+kubectl apply -f .\podswithparms.yaml -v=false
+kubectl apply -f .\podswithparms.yaml --valiate=false
+kubectl apply -f .\podswithparms.yaml --validate=false
+kubectl get all
+cls
+kubectl exec -t -t busybox -- /bin/sh
+kubectl exec -t  -i busybox -- /bin/shh
+kubectl exec -t  -i busybox -- /bin/sh
+kubectl delete pod busybox
+kubectl apply -f .\podswithparms.yaml --validate=false
+kubectl exec -t  -i busybox -- /bin/sh
+kubectl get all
+kubectl delete pod busybox
+kubectl apply -f .\secrets.yaml
+kubectl apply -f .\secrets2.yaml
+kubectl apply -f .\secrets2.yaml --validate=false
+cls
+kubectl apply -f .\secrets2.yaml --validate=false
+cls
+kubectl get all
+kubectl apply -f .\podswithparms.yaml --valiate=false
+kubectl apply -f .\podswithparms.yaml --validate=false
+kubectl exec -t  -i busybox -- /bin/sh
+cls
+kubectl applu -f .\configmap.yaml
+kubectl get a;;
+kubectl get all
+kubectl deleted pod busybox
+cls
+kubectl delete pod busybox
+kubectl apply -f  .\configmap.yaml
+kubectl get cm
+kubectl describe cm map1
+kubectl edit em map1
+kubectl edit cm map1
+kubectl describe cm map1
+kubectl create cm --help
+ kubectl create configmap my-config --from-file=./file.txt
+cls
+kubectl get cm
+kubectl apply -f .\configmap2.yaml
+kubectl get all
+kubectl get cm
+ cls
+kubectl apply -f .\podwitcngmap.yaml
+kubectl exec -t -i busybox1 -- /bin/sh
+kubectl get all
+kubectl delete .\podwitcngmap.yaml
+kubectl get all
+kubectl delete pod busybox1
+cls
+kubectl apply -f  .\podwitcngmap.yaml
+kubectl get all
+cls
+kubectl get all
+kubectl delete pod busybox1
+kubectl get cm
+kubectl apply -f .\configmap2.yaml
+kubectl apply -f .\podwitcngmap.yaml
+kubectl get all
+kubectl delete pod busybox1
+kubectl apply -f .\poddepo1.yaml
+kubectl delete -f .\poddepo1.yaml
+kubectl apply -f .\podwitcngmap.yaml
+kubectl get all
+cls
+kubectl get all
+cls
+kubectl get all
+cls
+kubectl get all
+kubectl delete pod busybox
+history

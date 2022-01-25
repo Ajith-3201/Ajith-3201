@@ -1,0 +1,21 @@
+kubectl delete pod busybox
+kubectl get all
+kubectl apply -f .\podwitcngmap.yaml
+kubectl delete -f .\poddepo1.yaml
+kubectl apply -f .\poddepo1.yaml
+kubectl delete pod busybox1
+kubectl apply -f .\configmap2.yaml
+kubectl get cm
+kubectl apply -f  .\podwitcngmap.yaml
+kubectl delete .\podwitcngmap.yaml
+kubectl exec -t -i busybox1 -- /bin/sh
+kubectl create configmap my-config --from-file=./file.txt
+kubectl create cm --help
+kubectl describe cm map1
+kubectl edit cm map1
+kubectl apply -f  .\configmap.yaml
+kubectl deleted pod busybox
+kubectl exec -t  -i busybox -- /bin/sh
+kubectl apply -f .\podswithparms.yaml --validate=false
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
