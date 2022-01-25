@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejsdemo
+spec:
+  selector:
+    matchLabels:
+      app: nodejsdemo
+  template:
+    metadata:
+      labels:
+        app: nodejsdemo
+    spec:
+      containers:
+      - name: nodejsdemo
+        image: azakasacr01.azurecr.io/nodejsdemo:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodejsdemo-service
+spec:
+  selector:
+    app: nodejsdemo
+    type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+

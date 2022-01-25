@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: nodejsdemoapp
+spec:
+  replicas: 5
+  selector:
+    app: nodejsdemoapp
+  template:
+    metadata:
+      name: nodejsdemoapp
+      labels:
+        app: nodejsdemoapp
+    spec:
+      containers:
+        - name: nodejsdemoapp
+          image: azakasacr01.azurecr.io/nodejsdemo:v1
+          ports:
+            - containerPort: 3000
